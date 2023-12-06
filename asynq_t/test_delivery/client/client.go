@@ -8,7 +8,6 @@ package client
 import (
 	"fmt"
 	"log"
-	"time"
 
 	"github.com/callmechiefdom/go-test/asynq_t/test_delivery"
 
@@ -29,11 +28,11 @@ func EmailDeliveryTaskAdd(i int) {
 		log.Fatalf("could not create task: %v", err)
 	}
 	// 任务入队
-	//info, err := client.Enqueue(task)
+	info, err := client.Enqueue(task)
 
 	//info, err := client.Enqueue(task, time.Now())
 	// 延迟执行
-	info, err := client.Enqueue(task, asynq.ProcessIn(3*time.Second))
+	// info, err := client.Enqueue(task, asynq.ProcessIn(3*time.Second))
 	// MaxRetry 重度次数 Timeout超时时间
 	//info, err = client.Enqueue(task, asynq.MaxRetry(10), asynq.Timeout(3*time.Second))
 	if err != nil {

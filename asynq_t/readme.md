@@ -67,6 +67,8 @@ type Task struct {
   + 实际需要初始化的路径是 github.com/callmechiefdom/go-test/asynq_t， 修改继续执行 go get
 + go mod tidy
 + go get -u github.com/hibiken/asynq
++ go doc -u asynq.Config
+  + 输出对应的结构体doc
 
 
 
