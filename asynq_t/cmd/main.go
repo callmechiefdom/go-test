@@ -15,8 +15,8 @@ import (
 func main() {
 	srv := asynq.NewServer(
 		asynq.RedisClientOpt{
-			Addr:     "192.168.0.120:6379",
-			Password: "123456",
+			Addr:     "10.45.11.94:31599",
+			Password: "",
 			DB:       2,
 		},
 		asynq.Config{
