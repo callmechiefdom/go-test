@@ -2,7 +2,6 @@
   + docker-compose up -d
 + 创建项目asynq_task
 
-
 ### asynq_task 目录
 
 ```bash
@@ -59,9 +58,6 @@ type Task struct {
 
 ```
 
-
-
-
 + go mod init asynq_t
   + go.mod 文件中一直是 module github.com/callmechiefdom/go-test
   + 实际需要初始化的路径是 github.com/callmechiefdom/go-test/asynq_t， 修改继续执行 go get
@@ -69,8 +65,6 @@ type Task struct {
 + go get -u github.com/hibiken/asynq
 + go doc -u asynq.Config
   + 输出对应的结构体doc
-
-
 
 ### deploy
 
@@ -81,3 +75,8 @@ go mod tidy
 go run cmd/main.go
 
 ```
+
+
+### asynqmon
+
++ docker-compose.yaml
