@@ -61,10 +61,12 @@ type Task struct {
 
 
 
+
 + go mod init asynq_t
+  + go.mod 文件中一直是 module github.com/callmechiefdom/go-test
+  + 实际需要初始化的路径是 github.com/callmechiefdom/go-test/asynq_t， 修改继续执行 go get
 + go mod tidy
 + go get -u github.com/hibiken/asynq
-+ go env GOROOT
 
 
 
