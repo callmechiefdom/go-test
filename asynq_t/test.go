@@ -6,8 +6,9 @@
 package main
 
 import (
-	"asynq_task/test_delivery/client"
 	"time"
+
+	"github.com/callmechiefdom/go-test/asynq_t/test_delivery/client"
 )
 
 func main() {

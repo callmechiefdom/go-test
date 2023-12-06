@@ -6,18 +6,19 @@
 package client
 
 import (
-	"asynq_task/test_delivery"
 	"fmt"
 	"log"
 	"time"
+
+	"github.com/callmechiefdom/go-test/asynq_t/test_delivery"
 
 	"github.com/hibiken/asynq"
 )
 
 func EmailDeliveryTaskAdd(i int) {
 	client := asynq.NewClient(asynq.RedisClientOpt{
-		Addr:     "192.168.0.120:6379",
-		Password: "123456",
+		Addr:     "10.45.11.94:31599",
+		Password: "",
 		DB:       2,
 	})
 	defer client.Close()

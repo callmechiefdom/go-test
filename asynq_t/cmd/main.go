@@ -5,8 +5,9 @@
 package main
 
 import (
-	"asynq_task/test_delivery"
 	"log"
+
+	"github.com/callmechiefdom/go-test/asynq_t/test_delivery"
 
 	"github.com/hibiken/asynq"
 )

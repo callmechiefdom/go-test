@@ -64,3 +64,16 @@ type Task struct {
 + go mod init asynq_t
 + go mod tidy
 + go get -u github.com/hibiken/asynq
++ go env GOROOT
+
+
+
+### deploy
+
+```bash
+docker run -it --privileged=true --name go-test -p 8085:8080 -v /data/app/aigc/go-test:/data golang:latest bash
+cd /data
+go mod tidy
+go run cmd/main.go
+
+```
