@@ -63,3 +63,4 @@ type Task struct {
 
 + go mod init asynq_t
 + go mod tidy
++ go get -u github.com/hibiken/asynq

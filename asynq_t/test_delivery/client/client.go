@@ -8,9 +8,10 @@ package client
 import (
 	"asynq_task/test_delivery"
 	"fmt"
-	"github.com/hibiken/asynq"
 	"log"
 	"time"
+
+	"github.com/hibiken/asynq"
 )
 
 func EmailDeliveryTaskAdd(i int) {
