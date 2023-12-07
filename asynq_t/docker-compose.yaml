@@ -7,7 +7,7 @@ asynqmon:
   command:
     - '--redis-addr=10.45.11.94:31599'
     - '--redis-password='
-    - '--redis-db=2'
+    - '--redis-db=0'
   restart: always
 #    networks:
 #      - looklook_net

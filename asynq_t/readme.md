@@ -80,3 +80,4 @@ go run cmd/main.go
 ### asynqmon
 
 + docker-compose.yaml
++ docker-compose up
